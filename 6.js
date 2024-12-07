@@ -15,15 +15,15 @@
 // pangram()
 
 s = "the quick brown fox jumps over the lazy dog";
+s2 = "qmExzBIJmdELxyOFWv LOCmefk TwPhargKSPEqSxzveiun";
 const pangram = (s) => {
     let check = new Set();
-    s.toLowerCase();
     for (let i = 0; i < s.length; i++) {
-        if (check.has(s[i])) {
+        if (check.has(s[i].toLowerCase())) {
             continue;
         } 
         if (s[i] !== " ") {
-            check.add(s[i]);
+            check.add(s[i].toLowerCase());
         }
     }
     console.log(check);
@@ -34,6 +34,7 @@ const pangram = (s) => {
     }
 }
 console.log(pangram(s));
+console.log(pangram(s2));
 
 
 
