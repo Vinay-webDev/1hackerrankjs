@@ -1,3 +1,4 @@
+//FIND DIGITS
 const n = 124;
 const n2 = 1012;
 const n3 = 20242024;
