@@ -15,7 +15,3 @@ const findDigits = (n) => {
 console.log(findDigits(n));  //3
 console.log(findDigits(n2)); //3
 console.log(findDigits(n3)); //6
-
-
-
-
