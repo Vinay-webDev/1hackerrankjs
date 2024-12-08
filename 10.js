@@ -8,8 +8,8 @@ const funnyString = (s) => {
     for (let i = 0; i < s.length - 1; i++) {
         sArr.push(Math.abs(s.charCodeAt(i + 1) - s.charCodeAt(i)));
     }
-    for (let i = 0; i < s2.length - 1; i++) {
-        s2Arr.push(Math.abs(s2.charCodeAt(i + 1) - s2.charCodeAt(i)));
+    for (let j = 0; j < s2.length - 1; j++) {
+        s2Arr.push(Math.abs(s2.charCodeAt(j + 1) - s2.charCodeAt(j)));
     }
     if (sArr.join("") === s2Arr.join("")) {
         return "Funny";
@@ -19,6 +19,9 @@ const funnyString = (s) => {
 }
 console.log(funnyString(s));  //Funny
 console.log(funnyString(s2)); //Not Funny
+
+
+
 
 
 
