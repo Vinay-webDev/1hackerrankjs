@@ -33,8 +33,8 @@ const pangram = (s) => {
         return "not a pangram";
     }
 }
-console.log(pangram(s));
-console.log(pangram(s2));
+console.log(pangram(s));  //pangram
+console.log(pangram(s2)); //pangram
 
 
 

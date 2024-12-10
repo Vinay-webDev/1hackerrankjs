@@ -33,27 +33,25 @@
 s = "aaab";
 s2 = "bcbc";
 s3 = "malayalamn";
-
-function helperFunc(sub) {
-    let l = 0;
-    let r = sub.length - 1;
-    while (l < r) {
-        if (sub[l] !== sub[r]) {
-            return false;
-        }
-        l++;
-        r--;
-    }
-    return true;
-}
-
 const palindromeIndex = (s) => {
+    // helper func
+    function isPalindrome(sub) {
+        let l = 0;
+        let r = sub.length - 1;
+        while (l < r) {
+            if (sub[l] !== sub[r]) {
+                return false;
+            }
+            l++;
+            r--;
+        }
+        return true;
+    }    
     let left = 0;
     let right = s.length - 1;
-
     while (left < right) {
         if (s[left] !== s[right]) {
-            if (helperFunc(s.slice(left + 1, right + 1))) {
+            if (isPalindrome(s.slice(left + 1, right + 1))) {
                 return left;
             } else {
                 return right;
@@ -64,9 +62,9 @@ const palindromeIndex = (s) => {
     }
     return -1;
 }
-console.log(palindromeIndex(s));
-console.log(palindromeIndex(s2));
-console.log(palindromeIndex(s3));
+console.log(palindromeIndex(s));  //3
+console.log(palindromeIndex(s2)); //0
+console.log(palindromeIndex(s3)); //9
 
 
 
