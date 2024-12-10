@@ -37,3 +37,70 @@ const strongPassword = (s) => {
 console.log(strongPassword(s));   //3
 console.log(strongPassword(s2));  //1
 // this has few issues🫠🫠🫠
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const strongPasswordGPT = (s) => {
+    let asciiCount = 0;
+    let lowercase = false;
+    let uppercase = false;
+    let digits = false;
+    let specialCharacter = false;
+
+    for (let i = 0; i < s.length; i++) {
+        const charCode = s.charCodeAt(i);
+
+        // Check lowercase
+        if (!lowercase && charCode >= 97 && charCode <= 122) {
+            lowercase = true;
+            asciiCount++;
+        }
+        // Check uppercase
+        else if (!uppercase && charCode >= 65 && charCode <= 90) {
+            uppercase = true;
+            asciiCount++;
+        }
+        // Check digits
+        else if (!digits && charCode >= 48 && charCode <= 57) {
+            digits = true;
+            asciiCount++;
+        }
+        // Check special characters
+        else if (
+            !specialCharacter &&
+            ((charCode >= 33 && charCode <= 45) || charCode === 64) // Include '@'
+        ) {
+            specialCharacter = true;
+            asciiCount++;
+        }
+    }
+
+    // Calculate the number of missing conditions
+    const missingConditions = 4 - asciiCount;
+
+    // Account for length condition
+    return Math.max(missingConditions, 6 - s.length);
+};
+
+console.log(strongPassword("Ab1"));          // Output: 3
+console.log(strongPassword("#Hackerrank"));  // Output: 1
