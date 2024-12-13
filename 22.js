@@ -1,8 +1,5 @@
 //Bon appetit
-const {bill, k, b} = {bill: [2, 4, 6], k: 2, b: 3};
-const {bill2, k2, b2} = {bill2: [2, 4, 6], k2: 2, b2: 6};
-const {bill3, k3, b3} = {bill3: [3, 10, 2, 9], k3: 1, b3: 12};
-const {bill4, k4, b4} = {bill4: [3, 10, 2, 9], k4: 1, b4: 7};
+
 const bonAppetitTry = (bill, k, b) => {
     let fair = 0;
     let unFair = 0;
@@ -24,6 +21,28 @@ const bonAppetitTry = (bill, k, b) => {
 // console.log(bonAppetitTry(bill3, k3, b3));     //5
 // console.log(bonAppetitTry(bill4, k4, b4));     //Bon Appetit
 //❌❌❌WRONG ANSWER❌❌❌
+const {bill, k, b} = {bill: [2, 4, 6], k: 2, b: 3};
+const {bill2, k2, b2} = {bill2: [2, 4, 6], k2: 2, b2: 6};
+const {bill3, k3, b3} = {bill3: [3, 10, 2, 9], k3: 1, b3: 12};
+const {bill4, k4, b4} = {bill4: [3, 10, 2, 9], k4: 1, b4: 7};
+const bonAppetit = (bill, k, b) => {
+    let total = 0;
+    for (let i = 0; i < bill.length; i++) {
+        total += bill[i];
+    }
+    const annasShare = (total - bill[k]) / 2;
+    if (b === annasShare) {
+        return "Bon Appetit";
+    } else {
+        return b - annasShare;
+    }
+}
+console.log(bonAppetit(bill,k,b));      //Bon Appetit
+console.log(bonAppetit(bill2,k2,b2));   //3
+console.log(bonAppetit(bill3,k3,b3));   //5
+console.log(bonAppetit(bill4,k4,b4));   //Bon Appetit
+
+
 
 
 // const k = 2
