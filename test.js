@@ -7,4 +7,8 @@ const catAndMouse = (x, y, z) => {
 
 const array = [2, 3, 4, 84, 100];
 
-console.log(Math.max(...array));
+// console.log(Math.max(...array));
+
+for (let i = 0; i <= 5; i++) {
+    console.log(i);
+}
