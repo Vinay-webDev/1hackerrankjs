@@ -21,7 +21,7 @@ const climbingLeaderboard = (ranked, player) => {
     for (let i = 0; i < player.length; i++) {
         leaderBoard.push(player[i]);
     }
-    const newArr = [...new Set(leaderBoard.sort((a, b) => b - a))]
+    const newArr = [...new Set(leaderBoard)];
     console.log(newArr);
     for (let j = 0; j < player.length; j++) {
         answer.push(newArr.indexOf(player[j]));

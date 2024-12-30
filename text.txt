@@ -1,0 +1,5 @@
+1. armstrong
+2. word frequency count
+3. sum of digits
+4. products of digits 
+5. 
