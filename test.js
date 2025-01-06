@@ -39,7 +39,26 @@ const array = [2, 3, 4, 84, 100];
 // const turnIn = 5 % 2; //1
 // const turnIn2 = Math.floor(5 / 2);
 // console.log(turnIn2);
-let r = Math.floor(5 / 2) + (5 % 2);
-let r2 = Math.ceil(5 / 2);
-console.log(r);
-console.log(r2);
+// let r = Math.floor(5 / 2) + (5 % 2);
+// let r2 = Math.ceil(5 / 2);
+// console.log(r);
+// console.log(r2);
+////////////////////////////////////
+//ANONYMOUS FUNCTION
+// a = 1
+// b = 2
+// const funcOne = function(a, b) {
+//     return a + b
+// }
+// console.log(funcOne(a, b))  //3
+///////////////////////////////
+
+// (function () {
+//     console.log("hello world")
+// })
+// (function(a, b) {
+//     return a + b
+// })
+// ()  //hello world
+// const call = (1, 2) 
+// console.log(call)

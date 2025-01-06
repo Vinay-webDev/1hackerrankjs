@@ -38,3 +38,29 @@ sol = Solution()
 print(sol.pickingNumbers(a1))   #3
 print(sol.pickingNumbers(a2))   #5
 print(sol.pickingNumbers(a3))   #5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
