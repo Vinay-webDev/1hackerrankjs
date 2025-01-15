@@ -38,6 +38,38 @@ print(sol.nonDivisibleSubset(s1, k1))   #0
 print(sol.nonDivisibleSubset(s2, k2))   #2
 #❌WRONG ANSWER❌           
 #huge logic issue😿
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

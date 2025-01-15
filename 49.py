@@ -38,3 +38,10 @@ print(sol.jumpingOnClouds(c2))  #4
 print(sol.jumpingOnClouds(c3))  #3
 
 
+
+
+
+
+
+
+

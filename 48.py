@@ -9,8 +9,8 @@ class Solution:
         N = len(cost)
         for i in range(N):
             if (m - cost[i]) in cost_map:
-                return [cost_map[m - cost[i]] + 1, i + 1] #1-indexed
-            cost_map[cost[i]] = i
+                return [cost_map[m - cost[i]] + 1, i + 1]  #1-indexed
+            cost_map[cost[i]] = i  #i + 1
 sol = Solution()
 print(sol.icecreamParlor(m1, cost1))    #[1, 4]
 print(sol.icecreamParlor(m2, cost2))    #[1, 4]
