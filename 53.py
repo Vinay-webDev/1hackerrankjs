@@ -25,8 +25,8 @@ class Solution:
         count, current_sum = 0, 0
         for i in range(m):
             current_sum += s[i]
-            if current_sum == d:
-                count += 1
+        if current_sum == d:
+            count += 1
         for i in range(m, N):
             current_sum += s[i]
             current_sum -= s[i - m]
