@@ -24,11 +24,11 @@ class Solution:
             res.append(total)
         return res
 sol = Solution()
-print(sol.findSum(numbers1, queries1))  #[6, 13, 7] ❌
-print(sol.findSum(numbers2, queries2))  #[20, 2] ✅
-print(sol.findSum(numbers3, queries3))  #[15, 7] ❌
-print(sol.findSum(numbers4, queries4))  #[1, 7, 2] ❌
-
+print(sol.findSum(numbers1, queries1))  #[6, 13, 7]
+print(sol.findSum(numbers2, queries2))  #[20, 2]
+print(sol.findSum(numbers3, queries3))  #[15, 7]
+print(sol.findSum(numbers4, queries4))  #[1, 7, 2]
+#✅✅
 
 
 
